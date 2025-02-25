@@ -11,7 +11,7 @@ package("sahara")
         if package:config("shared") then
             configs.kind = "shared"
         end
-        import("package.tools.xmake").install(package, configs)
+        os.cp("include/**/*.h", package:installdir("include/"))
     end)
     on_test(function (package)
     end)
