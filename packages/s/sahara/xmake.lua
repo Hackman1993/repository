@@ -1,7 +1,7 @@
 package("sahara")
     set_homepage("http://www.zlib.net")
     set_description("Hackman.Lo's Util")
-    set_version("1.0.0")
+    add_version("1.0.0")
     set_urls("https://github.com/Hackman1993/Sahara.git")
 
 
