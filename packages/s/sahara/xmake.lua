@@ -12,6 +12,7 @@ package("sahara")
             configs.kind = "shared"
         end
         os.cp("include/**/*.h", package:installdir("include/"))
+        import("package.tools.xmake").install(package, configs)
     end)
     on_test(function (package)
     end)
